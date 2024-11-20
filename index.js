@@ -12,7 +12,7 @@ const readline = require("readline")
 const { parsePhoneNumber } = require("libphonenumber-js")
 
 
-let phoneNumber = "923042205427"
+let phoneNumber = "918536881026"
 
 const pairingCode = !!phoneNumber || process.argv.includes("--pairing-code")
 const useMobile = process.argv.includes("--mobile")
@@ -59,18 +59,18 @@ const {  state, saveCreds } =await useMultiFileAuthState(`./sessions`)
          phoneNumber = phoneNumber.replace(/[^0-9]/g, '')
 
          if (!Object.keys(PHONENUMBER_MCC).some(v => phoneNumber.startsWith(v))) {
-            console.log(chalk.bgBlack(chalk.redBright("Start with country code of your WhatsApp Number, Example : +923042205427")))
+            console.log(chalk.bgBlack(chalk.redBright("Start with country code of your WhatsApp Number, Example : +918536881026")))
             process.exit(0)
          }
       } else {
-         phoneNumber = await question(chalk.bgBlack(chalk.greenBright(`wᴇʟcoмᴇ тo ᴘʀιɴcᴇ ʙoт ᴘᴀιʀ ᴘᴀԍᴇ😍
+         phoneNumber = await question(chalk.bgBlack(chalk.greenBright(`wᴇʟcoмᴇ тo 𝓡𝓘𝓒𝓚𝓨 ʙoт ᴘᴀιʀ ᴘᴀԍᴇ😍
          
 
 ɴow ᴇɴтᴇʀ ʏouʀ ɴuмʙᴇʀ wιтнouт ᴘʟus "+"   sιԍɴ 
 
 
 
-ᴇxᴀмᴘʟᴇ:  923040000427
+ᴇxᴀмᴘʟᴇ:  918536881026
 
 
 
@@ -79,13 +79,13 @@ const {  state, saveCreds } =await useMultiFileAuthState(`./sessions`)
 
          // Ask again when entering the wrong number
          if (!Object.keys(PHONENUMBER_MCC).some(v => phoneNumber.startsWith(v))) {
-            console.log(chalk.bgBlack(chalk.redBright("Start with country code of your WhatsApp Number, Example : +923042205427")))
+            console.log(chalk.bgBlack(chalk.redBright("Start with country code of your WhatsApp Number, Example : +918536881026")))
 
             phoneNumber = await question(chalk.bgBlack(chalk.greenBright(`wᴇʟcoмᴇ тo ᴘʀιɴcᴇ ʙoт ᴘᴀιʀ ᴘᴀԍᴇ.
 
 ɴow ᴇɴтᴇʀ ʏouʀ ɴuмʙᴇʀ wιтнouт ᴘʟus   +   sιԍɴ 
 
-ᴇxᴀмᴘʟᴇ:  923040000000`)))
+ᴇxᴀмᴘʟᴇ:  918500000000`)))
             phoneNumber = phoneNumber.replace(/[^0-9]/g, '')
             rl.close()
          }
@@ -102,18 +102,18 @@ const {  state, saveCreds } =await useMultiFileAuthState(`./sessions`)
         const { connection, lastDisconnect } = s
         if (connection == "open") {
             await delay(1000 * 10)
-            await XeonBotInc.sendMessage(XeonBotInc.user.id, { text: `🪩ᴛʜᴇ ᴘʀɪɴᴄᴇ ʙᴏᴛ ᴄᴏᴅᴇ ʜᴀs ʙᴇᴇɴ ᴘᴀɪʀᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ✅
+            await XeonBotInc.sendMessage(XeonBotInc.user.id, { text: `🪩ᴛʜᴇ 𝓡𝓘𝓒𝓚𝓨 ʙᴏᴛ ᴄᴏᴅᴇ ʜᴀs ʙᴇᴇɴ ᴘᴀɪʀᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ✅
 
 💌ɢɪᴠᴇ ᴀ sᴛᴀʀ ᴛᴏ ᴍʏ ʀᴇᴘᴏ ғᴏʀ ᴄᴏᴜʀᴀɢᴇ ✨
-https://github.com/PRINCE-GDS/THE-PRINCE-BOT
+https://github.com/Piku090909/ricky.git
 
 
 🪩ᴊᴏɪɴ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ ғᴏʀ ᴍᴏʀᴇ ϙᴜᴇʀʏ🪩
-https://chat.whatsapp.com/Jo5bmHMAlZpEIp75mKbwxP
+https://chat.whatsapp.com/FtIFV6frtfWApdmyUxnCjv
 
 
 ❇️Cʜᴀɴɴᴇʟ ʟɪɴᴋ❇️
-https://whatsapp.com/channel/0029VaGR6Ab7IUYPsbvSEa33
+https://whatsapp.com/channel/0029VaYESUGJkK7F76XsDj3L
 
 
 🛡️TᕼE-ᑭᖇIᑎᑕE-ᗷOT-ᗰᗪ🛡️` });
