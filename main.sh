@@ -1,1 +1,1 @@
-echo Hello ricky
+echo Hello MarieGold-MD
